@@ -72,7 +72,7 @@ function imprimeTresCoresFavoritas() {
   console.log(coresFavoritas)
 }
 
-// Exercício 6 **
+// Exercício 6 
 function retornaStringEmMaiuscula() {
   // escreva seu código aqui
 
@@ -81,7 +81,7 @@ function retornaStringEmMaiuscula() {
   console.log(texto.toUpperCase())
 }
 
-// Exercício 7 FALTA FAZER ****************************************************************************************
+// Exercício 7 
 function calculaIngressosEspetaculo() {
   // escreva seu código aqui
   
@@ -112,7 +112,7 @@ function checaStringsMesmoTamanho() {
 
 }
 
-// Exercício 9  FALTA FAZER ****************************************************************************************
+// Exercício 9  
 function checaIgualdadeDesconsiderandoCase() {
   // escreva seu código aqui
 
@@ -147,9 +147,9 @@ function checaRenovacaoRG() {
 function checaAnoBissexto() {
   // escreva seu código aqui
 
-  let anoBi = Number(prompt("Digite aqui o número do ano que quer saber se é bissexto"))
+  let anoBissexto = Number(prompt("Digite aqui o número do ano que quer saber se é bissexto"))
 
-  console.log(anoBi % 400 == 0 || anoBi % 4 == 0 && anoBi % 100 != 0)
+  console.log(anoBissexto % 400 == 0 || anoBissexto % 4 == 0 && anoBissexto % 100 != 0)
 
 
 
