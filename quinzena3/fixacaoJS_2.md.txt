@@ -1,0 +1,9 @@
+function calculaPrecoTotal(quantidade) {
+  if(quantidade  12) {
+    let precoMenosQue12 = quantidade  1.30
+    return valor1
+  }else if(quantidade = 12) {
+    let preco12 = quantidade  1
+    return valor2
+  }
+}

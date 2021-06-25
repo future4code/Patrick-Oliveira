@@ -3,7 +3,7 @@
 <html lang="pt-br" dir="ltr">
 
     <head>
-
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,20 +19,25 @@
         <meta name="twitter:title" content="Bendito Café">
         <title>Funcionários</title>
 
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/funcionarios.css">
     </head>
+
 <body>
-    <div>
-        <p>Bendito Café</p>
-    </div>
-    
-    <div>
-        <a href="./index.html">Página Inicial &#124;</a>
-        <a href="./ctrl-estoque.html">Controle de Estoque &#124;</a>
-        <a href="./add-produto.html">Adicionar Produto</a>
+   <header class="cabecalho">
+        <img class="logo" src="./assets/css/img/logo-bendito.png" alt="Logo Bendito Café">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link ativo" href="./index.html">Início</a></li>
+                <li class="menu__item"><a class="menu__link" href="ctrl-estoque.html">controle de estoque</a></li>
+                <li class="menu__item"><a class="menu__link" href="add-produto.html">adicionar produto</a></li>
+                <li class="menu__item"><a class="menu__link" href="funcionarios.html">funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </div>
-
-    <h2>Funcionários</h2>
+    <h2 id="funcionarios">Funcionários</h2>
    <table>
 
        <tr>
@@ -61,6 +66,11 @@
        </tr>
 
    </table>
+
+   <footer class="rodape">
+    &copy; 2021 - Bendito Café <p>Contato: benditocafe@hotmail.com</p>
+
+    </footer>
         
 </body>
 </html>

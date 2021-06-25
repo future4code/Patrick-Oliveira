@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="pt-br" dir="ltr">
-
+    
     <head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="Patrick Oliveira">
         <meta name="description" content="Um site para venda de doces e cafés">
 
@@ -16,35 +17,113 @@
         <meta property="og:title" content="Bendito Café">
 
             <!--Compartilhar no Twitter-->
-        <meta name="twitter:title" content="Bendito Café">
-        <title>Bendito Café</title>
 
+        <meta name="twitter:title" content="Bendito Café">
+       <title>Bendito Café </title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/index.css">
     </head>
 
-<body>
-    <div>
-        <h1>Bem-vindo&#40;a&#41; ao <em>Bendito Café</em>!</h1>
-        <p>Frase de chamada para sua loja</p>
-    </div>
+    <body>
+        <header class="cabecalho">
+            <img class="logo" src="./assets/css/img/logo-bendito.png" alt="Logo Bendito Café">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link ativo" href="#">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="ctrl-estoque.html">controle de estoque</a></li>
+                    <li class="menu__item"><a class="menu__link" href="add-produto.html">adicionar produto</a></li>
+                    <li class="menu__item"><a class="menu__link" href="funcionarios.html">funcionários</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div>
-        <a href="./ctrl-estoque.html">Controle de Estoque &#124;</a>
-        <a href="./add-produto.html">Adicionar Produto &#124;</a>
-        <a href="./funcionarios.html">Funcionários</a>
-    </div>
+        <section class="sobre">
+            <h2 class="sobre__titulo">De uma olhadinha no que temos!</h2>
+            <p class="sobre__descricao">Nossos melhores pratos</p>
+        </section>
 
-    <div>
-        <p>Aqui vendemos os melhores doces e cafés que você pode encontrar&#33;</p>
-    </div>
+        <section class="receitas">
+            <div class="receita">
+                <img alt="Caixa de brigadeiro gourmet" class="receita__imagem" src="./assets/css/img/brigadeiro-gourmet.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Brigadeiro Gourmet</h4>
+                    <p class="receita__descricao">Uma caixa cheia dos melhores brigadeiros gourmet</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
 
-    <div>
-        <p>Siga-nos nas redes sociais!</p>
+            <div class="receita">
+                <img alt="Bomba de chocolate" class="receita__imagem" src="./assets/css/img/bomba-de-chocolate.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Bomba de Chocolate</h4>
+                    <p class="receita__descricao">Uma deliciosa Bomba de Chocolate.</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
 
-        <div>
-            <img style="width: 25px; margin-right: 5px; cursor: pointer;" src="https://image.flaticon.com/icons/png/512/25/25305.png"/>
-            <img style="width: 25px; margin-right: 5px; cursor: pointer;" src="https://image.flaticon.com/icons/png/512/25/25425.png"/>
-            <img style="width: 25px; margin-right: 5px; cursor: pointer;" src="https://image.flaticon.com/icons/png/512/8/8800.png"/>
-        </div>
-    </div>
-</body>
+            <div class="receita">
+                <img alt="Mousse de chocolate" class="receita__imagem" src="./assets/css/img/mousse-de-chocolate.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Mousse de Chocolate</h4>
+                    <p class="receita__descricao">O melhor mousse que você ira encontrar</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="receita">
+                <img alt="Café com leite" class="receita__imagem" src="./assets/css/img/cafe-leite.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Café com leite</h4>
+                    <p class="receita__descricao">O café com leite perfeito pra sua tarde.</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="receita">
+                <img alt="Sonho de chocolate" class="receita__imagem" src="./assets/css/img/sonho.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Sonho de Chocolate</h4>
+                    <p class="receita__descricao">Um sonho delicioso e fofinho</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="receita">
+                <img alt="Café tradicional" class="receita__imagem" src="./assets/css/img/cafe-tradicional.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Café tradicional</h4>
+                    <p class="receita__descricao">O tradicional cafézinho preto de toda manhã</p>
+                    <button class="receita__botao">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="quem-somos">
+
+            <h3 class="quem-somos__titulo">Quem somos</h3>
+
+            <p class="quem-somos__descricao">Conheça quem trabalha no café!</p>
+
+            <div class="pessoas">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--suelen"></div>
+                    <span class="pessoa__nome">Suelen</span>
+                    <span class="pessoa__funcao">gerente</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--mari"></div>
+                    <span class="pessoa__nome">Mari</span>
+                    <span class="pessoa__funcao">Atendente</span>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="rodape">
+        &copy; 2021 - Bendito Café <p>Contato: benditocafe@hotmail.com</p>
+
+        </footer>
+    </body>
 </html>

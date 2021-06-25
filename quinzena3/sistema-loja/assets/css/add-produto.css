@@ -1,0 +1,72 @@
+
+.cabecalho{
+    align-items: end;
+    
+    padding-left: 2rem;
+}
+.logo {
+    width: 180px;
+    margin-top: 20px;
+}
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.menu__link.ativo{
+    color: black;
+    font-weight: bold;
+}
+
+.menu__link:hover{
+    border-bottom: 2px solid black;
+}
+
+#titulo {
+    margin:20px 25px;
+}
+
+form {
+    margin:20px 25px;
+}
+
+#button-submit {
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: none;
+
+    background: rgba(0,184,178,255);
+
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+#button-submit:hover {
+    background: #349487;
+    font-size: 17px;
+}
+
+
+.rodape {
+    background: #e5e5e5;
+    color: rgba(0,184,178,255);
+    text-align: center;
+    padding: 1.6rem 5rem;
+
+    position: absolute;
+    bottom: 0;
+    width: 1760px; /* isso foi a pior coisa que eu fiz nesse código, mas foi o que funcionou sksksksks */
+}

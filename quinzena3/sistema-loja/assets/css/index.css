@@ -1,0 +1,200 @@
+.cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+
+}
+
+.logo {
+    height: 150px;
+    position: relative;
+    bottom: -100px;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;                      
+}
+
+.menu__link.ativo{
+    color: black;
+    font-weight: bold;
+}
+
+.menu__link:hover{
+    border-bottom: 2px solid black;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: all 500ms ease-in-out;
+}
+img {
+    transition: all 500ms ease-in-out;
+}
+
+.sobre {
+    text-align: center;
+    padding: 2.5rem;
+    position: relative;
+    top: -50px
+}
+
+.sobre__titulo {
+    color: rgba(0,184,178,255);
+    font-family: Pacifico, cursive;
+    font-size: 3.19rem;
+}
+
+.sobre__descricao {
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+/* CSS das receitas */
+.receitas {
+    background: #e5e5e5;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 5rem 5rem 5rem 5rem;
+
+    justify-content: space-between;
+}
+
+.receita {
+    justify-content: space-between;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: 25%;
+}
+
+.receita:nth-child(6) {
+    margin-right: 0;
+}
+
+.receita:nth-child(3) {
+    margin-right: 0;
+}
+
+.receita__imagem {
+    height: 200px;
+}
+
+.receita__titulo {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.receita__descricao {
+    font-size: 1.18rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.receita__conteudo {
+    padding: 1.5rem;
+}
+.receita__botao {
+    background: rgba(0,184,178,255);
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd ;
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    transition: all 400ms ease-in-out;
+}
+
+.receita__botao:hover {
+    cursor: pointer;
+    background: #349487;
+    font-size: 17px;
+}
+/* quem somos */
+.quem-somos__titulo {
+    margin-bottom: 1rem;
+    color: rgba(0,184,178,255);
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+}
+
+.quem-somos {
+    text-align: center;
+    padding: 5rem;
+}
+
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa__nome {
+    margin: 1rem 0;
+    font-family: Pacifico, cursive;
+    color: rgba(0,184,178,255);
+    font-size: 2rem;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    color: #595959;
+    font-size: 1.25rem;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.pessoa__imagem {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%; 
+}
+
+.pessoa__imagem--suelen {
+    background-image: url('../css/img/suelen.jpg');
+    
+}
+
+.pessoa__imagem--mari {
+    background-image: url('../css/img/mari.jpg');
+}
+
+/* rodape */
+.rodape {
+    background: #e5e5e5;
+    color: rgba(0,184,178,255);
+    text-align: center;
+    padding: 1.5625rem 5rem;
+}

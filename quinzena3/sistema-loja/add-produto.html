@@ -3,7 +3,7 @@
 <html lang="pt-br" dir="ltr">
 
     <head>
-
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,21 +19,27 @@
         <meta name="twitter:title" content="Bendito Café">
         <title>Adicionar Produtos</title>
 
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/add-produto.css">
+
     </head>
 
 <body>
-    <div>
-        <p>Bendito Café</p>
-    </div>
-    
-    <div>
-        <a href="./index.html">Página Inicial &#124;</a>
-        <a href="./ctrl-estoque.html">Controle de Estoque &#124;</a>
-        <a href="./funcionarios.html">Funcionários</a>
-    </div>
+    <header class="cabecalho">
+        <img class="logo" src="./assets/css/img/logo-bendito.png" alt="Logo Bendito Café">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link ativo" href="./index.html">Início</a></li>
+                <li class="menu__item"><a class="menu__link" href="ctrl-estoque.html">controle de estoque</a></li>
+                <li class="menu__item"><a class="menu__link" href="add-produto.html">adicionar produto</a></li>
+                <li class="menu__item"><a class="menu__link" href="funcionarios.html">funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
 
     
-    <h2>Adicionar Produto</h2>
+    <h2 id="titulo">Adicionar Produto</h2>
     <form action="">
         <div>
             <label for="link-foto">Link para foto: </label>
@@ -42,28 +48,29 @@
         
         <div>
             <label for="descricao">Descrição do produto: </label>
-            <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="descricao" name="descrição">
         </div>
         
         <div>
             <label for="preco">Preço (em R$): </label>
-            <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="preco" name="preço">
         </div>
         
         <div>
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
             <label for="quantidade">Quantidade disponível: </label>
             <input type="number" id="quantidade" name="quantidade">
         </div>
 
         <div class="form-add">
-            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="submit">Adicionar</button>
+            <button id="button-submit" type="submit">Adicionar</button>
         </div>
 
     </form>
+
+    <footer class="rodape">
+        &copy; 2021 - Bendito Café <p>Contato: benditocafe@hotmail.com</p>
+
+    </footer>
 
 </body>
 </html>

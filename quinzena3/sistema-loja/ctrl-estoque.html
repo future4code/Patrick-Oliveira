@@ -3,7 +3,7 @@
 <html lang="pt-br" dir="ltr">
 
     <head>
-
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +17,30 @@
 
             <!--Compartilhar no Twitter-->
         <meta name="twitter:title" content="Bendito Café">
+
         <title>Controle de Estoque</title>
+        <link rel="stylesheet" href="./assets/css/ctrl-estoque.css">
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+       
+
 
     </head>
 
 <body>
-    <div>
-        <p>Nome da lojinha</p>
-    </div>
-    
-    <div>
-        <a href="./funcionarios.html">Página Inicial &#124;</a>
-        <a href="./add-produto.html">Adicionar Produto &#124;</a>
-        <a href="./funcionarios.html">Funcionários</a>
-    </div>
+    <header class="cabecalho">
+        <img class="logo" src="./assets/css/img/logo-bendito.png" alt="Logo Bendito Café">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link ativo" href="index.html">Início</a></li>
+                <li class="menu__item"><a class="menu__link" href="ctrl-estoque.html">controle de estoque</a></li>
+                <li class="menu__item"><a class="menu__link" href="add-produto.html">adicionar produto</a></li>
+                <li class="menu__item"><a class="menu__link" href="funcionarios.html">funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Controle de Estoque</h2>
+    <h2 id="controle-estoque">Controle de Estoque Bendito Café</h2>
 
     <table>
         <tr>
@@ -43,36 +51,51 @@
         </tr>
 
         <tr>
-            <td><img style="width: 200px;" src="./img/bomba-de-chocolate.jpg" alt="Bomba de Chocolate"></td>
+            <td><img src="./assets/css/img/bomba-de-chocolate.jpg" alt="Bomba de Chocolate"></td>
             <td>Uma deliciosa Bomba de Chocolate</td>
             <td> R$ 5,00 </td>
             <td> 12 </td>
         </tr>
 
         <tr>
-            <td><img style="width: 200px; height: 150px;" src="./img/brigadeiro-gourmet.jpg" alt="Brigadeiro Gourmet"></td>
+            <td><img class="brigadeiro" src="./assets/css/img/brigadeiro-gourmet.jpg" alt="Brigadeiro Gourmet"></td>
             <td> Uma deliciosa Bomba de Chocolate </td>
             <td> R$ 50,00 </td>
             <td> 8 </td>
         </tr>
 
         <tr>
-            <td><img style="width: 200px;" src="./img/mousse-de-chocolate.jpg" alt="Mousse de Chocolate"></td>
+            <td><img src="./assets/css/img/mousse-de-chocolate.jpg" alt="Mousse de Chocolate"></td>
             <td> Uma deliciosa Bomba de Chocolate </td>
             <td> R$ 8,00 </td>
             <td> 17 </td>
         </tr>
 
         <tr>
-            <td><img style="width: 200px;" src="./img/sonho.jpg" alt="Sonho de Chocolate"></td>
+            <td><img src="./assets/css/img/sonho.jpg" alt="Sonho de Chocolate"></td>
             <td> Uma deliciosa Bomba de Chocolate </td>
             <td> R$ 3,00 </td>
             <td> 2 </td>
         </tr>
-        
-        <!-- Crie mais uma linha desta tabela abaixo \/ -->
+
+        <tr>
+            <td><img src="./assets/css/img/cafe-leite.jpg" alt="Café com leite"></td>
+            <td> Uma deliciosa Bomba de Chocolate </td>
+            <td> R$ 3,00 </td>
+            <td> 2 </td>
+        </tr>
+
+        <tr>
+            <td><img src="./assets/css/img/cafe-tradicional.jpg" alt="Café tradicional"></td>
+            <td> Uma deliciosa Bomba de Chocolate </td>
+            <td> R$ 3,00 </td>
+            <td> 2 </td>
+        </tr>
 
     </table>
+    <footer class="rodape">
+        &copy; 2021 - Bendito Café <p>Contato: benditocafe@hotmail.com</p>
 
+        </footer>
 </body>
 </html>
