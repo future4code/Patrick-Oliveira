@@ -1,0 +1,11 @@
+```
+function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
+ // Escreva seu código aqui
+let comissaoPorCarro = qtdeCarrosVendidos *100
+let comissaoTotalVendas = valorTotalVendas * 0.05
+let salarioTotal = comissaoPorCarro + comissaoTotalVendas + 2000
+
+return salarioTotal
+}
+
+```
