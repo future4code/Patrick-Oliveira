@@ -73,3 +73,23 @@ footer {
     position: absolute;
     width: 100vw;
 }
+
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    footer {
+        display: none
+    }
+
+}
