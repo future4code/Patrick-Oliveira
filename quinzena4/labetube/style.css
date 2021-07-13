@@ -10,7 +10,6 @@ p {
 
 body {
     min-height: 100vh;
-    /* display: grid; */
     grid-template-columns: 300px 1fr;
     grid-template-rows: 60px 1fr 60px;
 }
@@ -49,6 +48,7 @@ header {
 
 .videos {
     width: 100%;
+    
 }
 
 main {
@@ -72,4 +72,24 @@ footer {
     bottom: 0;
     position: absolute;
     width: 100vw;
+}
+
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    footer {
+        display: none
+    }
+
 }
